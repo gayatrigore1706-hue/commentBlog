@@ -1,0 +1,14 @@
+run = "python replit_init.py"
+modules = ["python-3.12"]
+
+[env]
+PYTHONUNBUFFERED = "1"
+
+[nix]
+channel = "stable-24_05"
+
+[[ports]]
+localPort = 8000
+externalPort = 80
+
+
