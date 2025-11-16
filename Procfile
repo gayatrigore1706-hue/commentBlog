@@ -1,1 +1,1 @@
-web: cd CommentBlog && gunicorn blogsite.wsgi:application --bind 0.0.0.0:8000
+web: cd CommentBlog && python manage.py migrate && gunicorn blogsite.wsgi:application --bind 0.0.0.0:$PORT
